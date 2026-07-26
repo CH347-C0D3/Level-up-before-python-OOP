@@ -24,7 +24,7 @@ Choose what you want to do:
             continue
 
     if tomb == 1:
-        items.sort()    # .sort() automatically sets the items inside a list in ascending order. It does not return any value.
+        sorted(items)    # .sort() automatically sets the items inside a list in ascending order. It does not return any value.
         for item in items:   
             print(item)
 
