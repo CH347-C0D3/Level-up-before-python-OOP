@@ -1,6 +1,10 @@
 items = ["apple", "banana", "orange", "mango"]
 
-print(f"Welcome to Python items sorter. This is the list:{items}")
+print("Welcome to Python items sorter. This is the list: ")
+
+for i in range(len(items)):
+    print(items[i])
+
 
 
 while True:
@@ -21,11 +25,13 @@ Choose what you want to do:
 
     if tomb == 1:
         items.sort()
-        print(items)
+        for i in range(len(items)):
+            print(items[i])
 
     elif tomb == 2:
         desce = sorted(items, reverse = True)
-        print(desce)
+        for i in range(len(desce)):
+            print(desce[i])
 
     elif tomb == 3:
         print("Goodbye!")
