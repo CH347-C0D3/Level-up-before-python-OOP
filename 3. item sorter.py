@@ -2,8 +2,8 @@ items = ["apple", "banana", "orange", "mango"]      # Existing hardcoded list.
 
 print("Welcome to Python items sorter. This is the list: ")
 
-for i in range(len(items)):   
-    print(items[i])
+for item in items:   
+    print(item)
 
 
 
@@ -25,13 +25,14 @@ Choose what you want to do:
 
     if tomb == 1:
         items.sort()    # .sort() automatically sets the items inside a list in ascending order. It does not return any value.
-        for i in range(len(items)):
-            print(items[i])
+        for item in items:   
+            print(item)
 
     elif tomb == 2:
         desce = sorted(items, reverse = True)   # sorted() returns a new sorted list
-        for i in range(len(desce)):
-            print(desce[i])
+        for desc in desce:   
+            print(desc)
+
 
     elif tomb == 3:
         print("Goodbye!")
